@@ -9,6 +9,7 @@ volume_accured = normal_mud * dif_depth
 
 # Вычисление объема бурового раствора
 volume_initial = float(input("Введите объём бурового раствора в обсаженной части скважины, м3: "))
+
 volume_capacity = float(input("Введите объём рабочих ёмкостей, м3: "))
 volume_mud = volume_capacity + volume_initial + volume_accured
 
@@ -18,7 +19,7 @@ quantity_clay = normal_clay * volume_mud
 
 # Вычисление количества утяжелителя
 choise = input("Раствор был утяжелён? Y/N: ")
-if (choise == 'Y' or choise == 'y'):
+if choise == 'Y' or choise == 'y':
     # Вычисление коэффициента учитывающего степень повышения плотности
     density_weight = float(input("Введите плотность утяжелителя, кг/м3: "))
     density_initial = float(input("Введите плотность бурового раствор до обработки утяжелителем, кг/м3: "))
@@ -47,4 +48,3 @@ print("Потребное утяжелителя: ", quantity_weight, " т")
 print("Потребное количество реагентов: ")
 for reagent in reagent_array:
     print(f"Название: {reagent[0]} - {reagent[1]} т")
-

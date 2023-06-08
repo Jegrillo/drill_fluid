@@ -17,4 +17,4 @@ def import_data2(x, niz, verh, davlenie1, davlenie2):
     cell.value = davlenie1
     cell = sheet.cell(row=x, column=4)
     cell.value = davlenie2
-    workbook.save('intervals.xlsx')
+    workbook.save( 'intervals.xlsx')
